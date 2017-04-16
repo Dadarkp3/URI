@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(){
+	int i=0, j=0;
+	char caracter;
+	int quantidade_cadeias;
+	char cadeia_teste[31];
+	char cadeias[30][30];
+	do{
+		read(0, &caracter, sizeof(char));
+		if (caracter=='\n'){
+			cadeias[i][j]='\0';					
+				i++;
+				j=0;
+			}else{ 	 
+                cadeias[i][j]=caracter;
+                j++;
+			}			
+	}while(caracter !='#');
+	quantidade_cadeias=i;
+	cadeias[i][j-1]='\0';
+	i = 0;	
+	do{
+	for(j = 0; cadeias[i][j] != '\0'; j++){
+        cadeia_teste[j] = cadeias[i][j];
+	}
+	cadeia_teste[j] = '\0';
+	printf("A cadeia é %s\n",cadeia_teste);
+	quantidade_cadeias--;
+	i++;
+	}while(quantidade_cadeias>0);
+	return 0;
+}

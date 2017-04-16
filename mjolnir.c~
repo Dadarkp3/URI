@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(void)
+{
+	char N[100];
+	int valor, i, n;
+	scanf("%d", &n);
+	do
+	{	
+		scanf("%c %d", N, &valor);
+		if(N[0] == 'T' && N[1] == 'H' && N[2] == 'O' && N[3] == 'R' && N[4] == '\0') printf("Y\n");
+		else printf("N\n");
+		n--;
+	}
+	while(n > 0);
+	return 0;
+}

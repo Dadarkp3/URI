@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main(){
+	double A,B,C,Media;
+	scanf("%f",&A);
+	scanf("%f",&B);
+	scanf("%f",&C);
+	Media=((A*2)+(B*3)+(C*5))/10;
+	printf("MEDIA = %.1f",Media);
+	return 0;
+}

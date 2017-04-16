@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+	char chave1[30], chave2[30], chave3[30];
+	scanf("%s %s %s", chave1, chave2, chave3);
+	if (strcmp(chave1,"vertebrado") == 0)
+	{
+		if (strcmp(chave2,"ave") == 0)
+		{
+			if (strcmp(chave3,"carnivoro") == 0) printf("aguia\n");
+			else if (strcmp(chave3,"onivoro") == 0) printf("pomba\n");
+		}
+		else
+		{ 
+			if (strcmp(chave2,"mamifero") == 0)
+			{
+			if (strcmp(chave3,"onivoro") == 0) printf("homem\n");
+			else if (strcmp(chave3,"herbivoro") == 0) printf("vaca\n");					
+		
+			}
+		}	
+	}
+	else
+	{
+		 if (strcmp(chave1,"invertebrado") == 0)
+		{
+			if (strcmp(chave2,"inseto") == 0)
+			{
+				if (strcmp(chave3,"hematofago") == 0) printf("pulga\n");
+				else printf("lagarta\n");
+			}
+			else
+			{ 
+				if (strcmp(chave2,"anelideo") == 0)
+				{
+				if (strcmp(chave3,"hematofago") == 0) printf("sanguessuga\n");
+				else printf("minhoca\n");					
+		
+				}
+			}	
+		} 
+	}
+	return 0;
+}

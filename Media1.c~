@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+	double Nota1, Nota2, Media;
+	scanf("%lf %lf",&Nota1,&Nota2);
+	Media=(Nota1*3.5+Nota2*7.5)/11;
+	printf("PROD = %.5lf\n",Media);
+	return 0;
+}
